@@ -1,4 +1,3 @@
-/* Adicionar aqui toda a estilização criada para sua aplicação. */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
@@ -10,116 +9,209 @@ body {
 
 :root {
   --tamanho-header: 80px;
+  --tamanho-footer: 65px;
   --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-  --tamanho-footer: 65px;
 }
 
+/* HEADER */
 .header {
   height: var(--tamanho-header);
   border-bottom: 2px solid #32b9cd;
 }
 
-.container {
-    display: flex;
-    width: 80%;
-    margin: auto;
-}
-
 .header .container {
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .header a {
-    text-decoration: none;
-    color: #e3b062;
+  text-decoration: none;
+  color: #e3b062;
 }
 
 .agora {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .navbar {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    color: #e3b062;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #e3b062;
 }
-
 
 .titulo {
-    color: #32b9cd;
-    width: fit-content;
-    font-weight: 800;
+  color: #32b9cd;
+  width: fit-content;
+  font-weight: 800;
 }
 
+/* BANNER */
 .banner {
-    height: var(--tamanho-banner);
-    color: white;
-    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
-    background-size: cover;
+  height: var(--tamanho-banner);
+  color: white;
+  background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+  background-size: cover;
 }
 
 .banner .container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .banner .container p {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    font-size: 36px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
 }
 
 .banner .container span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
+/*SOBRE*/
 .social {
-    background-color: #e5e5e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social .container .boxes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box img{
-    width: 170px;
+.box img {
+  width: 170px;
 }
 
-/* FOOTER */
+/*FOOTER*/
 .footer {
-    background-color: #32b9cd;
-    height: var(--tamanho-footer);
-    color: #fff;
-    display: flex;
-    font-size: 15px;
+  background-color: #32b9cd;
+  height: var(--tamanho-footer);
+  color: #fff;
+  display: flex;
+  font-size: 15px;
 }
 
-.footer .container {
+/*LOGIN*/
+.login {
+  height: var(--tamanho-banner);
+  color: #dd7b9a;
+  background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card-login {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 500px;
+  height: 180px;
+}
+
+/*CADASTRO*/
+.cadastro {
+    height: var(--tamanho-banner);
+    color: #dd7b9a;
+    background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.version {
-    font-size: 12px;
+.container .card-cadastro {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 500px;
+  height: 400px;
 }
 
+/* GERAl */
+input {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid;
+  border-color: #32b9cd;
+  text-align: center;
+}
+
+.campo {
+  margin: 5px;
+}
+
+.campo span {
+  font-weight: 700;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  width: 90px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #ed145b;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
