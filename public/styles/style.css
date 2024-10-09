@@ -9,8 +9,8 @@ body {
 
 :root {
   --tamanho-header: 80px;
-  --tamanho-footer: 65px;
-  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-footer: 80px;
+  --tamanho-banner: calc(50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 }
 
@@ -28,7 +28,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: #ffffff;
 }
 
 .agora {
@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: #ffffff;
 }
 
 .titulo {
@@ -65,7 +65,7 @@ body {
 }
 
 .banner .container p {
-  width: 50%;
+  width: 65%;
   margin: 0;
   padding: 0;
   font-size: 36px;
@@ -83,16 +83,23 @@ body {
   align-items: center;
 }
 
+.social .container {
+  display: flex;
+  justify-content: center;
+}
+
 .social .container .boxes {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  width: 70%;
   padding: 30px 0;
+  text-align: center;
 }
 
-.box {
+.social .container .boxes .box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
